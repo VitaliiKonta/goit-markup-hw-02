@@ -5,10 +5,23 @@
 /* адрес не наслідує */
 /* нп кнопку сурсор поинтер */
 /* в рідмі класи */
+
+/* если есть ховер то должен быть и фокус */
+
+/* MaiN COLOR */
+/* NAVY BLUE main header color: #2E2F42; */
+/* main dark text color: #434455; */
+/* main light text color: #E7E9FC;
+
+/* main btn text color: #4D5AE5; */
+/* main btn text backgroundcolor: #404BBF; */
+/* main btn text hover color: color: #FFFFFF; */
+
 /* ===========whole file============== */
 
 body {
   font-family: "Roboto";
+  font-style: normal;
 }
 
 .link {
@@ -18,6 +31,78 @@ body {
 .list {
   list-style: none;
 }
+
+/* ==============HEADER========================= */
+
+.logo-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* NAVY BLUE */
+  color: #2e2f42;
+}
+
+.blue-logo-text {
+  color: #4d5ae5;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #4d5ae5;
+}
+
 .address-link {
   font-style: normal;
+  text-decoration: none;
+  color: #434455;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #4d5ae5;
+}
+/*================= .visually-hidden H1 ==============*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ===========================MAIN-PAGE================================ */
+
+/* ==============================FOOTER========================= */
+.footer-background {
+  background: #2e2f42;
+}
+/* MAYBE BETTER DELETE LATER CLASS ABOVE? */
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
+.white-logo-color {
+  color: #f4f4fd;
 }
