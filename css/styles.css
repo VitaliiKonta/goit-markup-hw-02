@@ -189,6 +189,7 @@ body {
   color: #f4f4fd;
 }
 /* +++++++++++++++++++++++++++++++++========================PORTFOLIO-PAGE========================================+++++++++++++++++++ */
+/* ==============================BUTTONS========================= */
 .portfolio-btn {
   background: #f4f4fd;
 }
@@ -212,4 +213,19 @@ body {
 .portfolio-btn-text:focus,
 .portfolio-btn-text:active {
   color: #ffffff;
+}
+/* ==============================EXAMPLES========================= */
+.examples-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.examples-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
