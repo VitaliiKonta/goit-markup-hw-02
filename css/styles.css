@@ -17,7 +17,7 @@
 /* main btn text backgroundcolor: #404BBF; */
 /* main btn text hover color: color: #FFFFFF; */
 
-/* ===========whole file============== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++===========WHOLE FILE============== */
 
 body {
   font-family: "Roboto";
@@ -34,7 +34,7 @@ body {
 .btn {
 }
 
-/* ==============HEADER========================= */
+/* ===========================HEADER================================ */
 
 .logo-text {
   font-family: "Raleway";
@@ -44,7 +44,6 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* NAVY BLUE */
   color: #2e2f42;
 }
 
@@ -66,7 +65,6 @@ body {
 
 .address-link {
   font-style: normal;
-  text-decoration: none;
   color: #434455;
 }
 
@@ -90,7 +88,7 @@ body {
   overflow: hidden;
 }
 
-/* ===========================MAIN-PAGE================================ */
+/* +++++++++++++++++++++++++++++++++========================MAIN-PAGE========================================+++++++++++++++++++ */
 /* ===========================HERO================================ */
 .hero-background {
   background: #2e2f42;
@@ -101,7 +99,6 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -119,10 +116,60 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+/* ==============================BENEFITS========================= */
+
+.benefits-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* ==============================WHAT WE ARE DOING========================= */
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+/* ==============================OUR TEAM========================= */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+/*  .team-title { text-transform: capitalize;} */
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* ==============================FOOTER========================= */
@@ -140,4 +187,29 @@ body {
 }
 .white-logo-color {
   color: #f4f4fd;
+}
+/* +++++++++++++++++++++++++++++++++========================PORTFOLIO-PAGE========================================+++++++++++++++++++ */
+.portfolio-btn {
+  background: #f4f4fd;
+}
+
+.portfolio-btn-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+}
+
+.portfolio-btn:hover,
+.hero-btn:focus {
+  background: #4d5ae5;
+}
+.portfolio-btn:active {
+  background: #404bbf;
+}
+.portfolio-btn-text:hover,
+.portfolio-btn-text:focus,
+.portfolio-btn-text:active {
+  color: #ffffff;
 }
