@@ -1,29 +1,14 @@
-/* 4 змінні оснвні кольори заголовків і кнопки */
-/* класи для всіх */
-/* заголовки прписуемо сан серіф через кому як запасний і  чставимо фонт вейт чк в макеті, бо браузер 700 ставить на заголовки */
-/* вижуали хиден для лишнего заголовка */
-/* адрес не наслідує */
-/* нп кнопку сурсор поинтер */
-/* в рідмі класи */
-
-/* если есть ховер то должен быть и фокус */
-
-/* MaiN COLOR */
-/* NAVY BLUE main header color: #2E2F42; */
-/* main dark text color: #434455; */
-/* main light text color: #E7E9FC;
-
-/* main btn text color: #4D5AE5; */
-/* main btn text backgroundcolor: #404BBF; */
-/* main btn text hover color: color: #FFFFFF; */
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++===========WHOLE FILE============== */
+/* ++++++++++++++++++++++++++++++++++++++===========WHOLE FILE============== */
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
+  color: #434455;
 }
 
+button {
+  cursor: pointer;
+}
 .link {
   text-decoration: none;
 }
@@ -31,24 +16,28 @@ body {
 .list {
   list-style: none;
 }
-.btn {
+
+:root {
+  --brand-color: #4d5ae5;
+  --main-header-color: #2e2f42;
+  --btn-accent-color: #404bbf;
+  --background-color: #2e2f42;
 }
 
 /* ===========================HEADER================================ */
 
 .logo-text {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--main-header-color);
 }
 
 .blue-logo-text {
-  color: #4d5ae5;
+  color: var(--brand-color);
 }
 
 .nav-link {
@@ -60,7 +49,7 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #4d5ae5;
+  color: var(--brand-color);
 }
 
 .address-link {
@@ -70,7 +59,7 @@ body {
 
 .address-link:hover,
 .address-link:focus {
-  color: #4d5ae5;
+  color: var(--brand-color);
 }
 /*================= .visually-hidden H1 ==============*/
 
@@ -91,7 +80,7 @@ body {
 /* +++++++++++++++++++++++++++++++++========================MAIN-PAGE========================================+++++++++++++++++++ */
 /* ===========================HERO================================ */
 .hero-background {
-  background: #2e2f42;
+  background: var(--background-color);
 }
 /* MAYBE BETTER DELETE LATER CLASS ABOVE? */
 
@@ -100,24 +89,27 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #ffffff;
 }
 .hero-btn {
-  background: #4d5ae5;
+  background: var(--brand-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #4d5ae5;
+  background: var(--brand-color);
 }
 .hero-btn:active {
   background: #404bbf;
 }
 .hero-btn-text {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  text-align: center;
 }
 
 /* ==============================BENEFITS========================= */
@@ -127,14 +119,12 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-header-color);
 }
 .benefits-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 /* ==============================WHAT WE ARE DOING========================= */
 .about-title {
@@ -143,7 +133,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--main-header-color);
 }
 /* ==============================OUR TEAM========================= */
 .team-title {
@@ -152,34 +142,31 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--main-header-color);
 }
 
-.team-title {
+.team-title-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-transform: capitalize;
+  color: var(--main-header-color);
 }
-/*  .team-title { text-transform: capitalize;} */
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 /* ==============================FOOTER========================= */
 .footer-background {
-  background: #2e2f42;
+  background: var(--background-color);
 }
 /* MAYBE BETTER DELETE LATER CLASS ABOVE? */
 
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -195,37 +182,37 @@ body {
 }
 
 .portfolio-btn-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--btn-accent-color);
+  text-align: center;
 }
 
 .portfolio-btn:hover,
-.hero-btn:focus {
-  background: #4d5ae5;
-}
-.portfolio-btn:active {
-  background: #404bbf;
-}
-.portfolio-btn-text:hover,
-.portfolio-btn-text:focus,
-.portfolio-btn-text:active {
+.portfolio-btn:focus {
+  background: var(--brand-color);
   color: #ffffff;
 }
+
+.portfolio-btn:active {
+  background: #404bbf;
+  color: #ffffff;
+}
+
 /* ==============================EXAMPLES========================= */
 .examples-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-header-color);
 }
 .examples-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
