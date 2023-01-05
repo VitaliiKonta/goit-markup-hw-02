@@ -2,7 +2,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   color: #434455;
 }
 
@@ -94,6 +93,13 @@ button {
 }
 .hero-btn {
   background: var(--brand-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-align: center;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -101,15 +107,6 @@ button {
 }
 .hero-btn:active {
   background: #404bbf;
-}
-.hero-btn-text {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  text-align: center;
 }
 
 /* ==============================BENEFITS========================= */
@@ -183,7 +180,6 @@ button {
 
 .portfolio-btn-text {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -215,4 +211,5 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
